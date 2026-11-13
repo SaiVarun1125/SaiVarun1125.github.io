@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artifact 3: Machine Learning vs. Deep Learning - Venkata Sai Varun Mooraboina</title>
+  <meta name="description"
+    content="A comparative report on when to use traditional machine learning and when to use deep learning, with a real-world case study of each.">
+  <meta name="author" content="Venkata Sai Varun Mooraboina">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Machine Learning vs. Deep Learning: Choosing the Right Approach">
+  <meta property="og:description"
+    content="A comparative report on when to use traditional machine learning and when to use deep learning, with a real-world case study of each.">
+  <meta name="theme-color" content="#F7F3EA">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E3A5F'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='30' text-anchor='middle' fill='%23FFFDF8'%3ESV%3C/text%3E%3Ccircle cx='50' cy='48' r='4' fill='%23D9472B'/%3E%3C/svg%3E">
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t) } catch (e) { }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Venkata Sai Varun Mooraboina, home">
+        <span class="brand-mark" aria-hidden="true">SV</span>
+        <span class="brand-name">Venkata Sai Varun Mooraboina</span>
+        <span class="brand-short" aria-hidden="true">Sai Varun</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a class="hide-sm" href="index.html#about">About</a>
+        <a class="hide-sm" href="index.html#value">Value</a>
+        <a href="artifact-1.html">Artifact 1</a>
+        <a href="artifact-2.html">Artifact 2</a>
+        <a href="artifact-3.html" aria-current="page">Artifact 3</a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="paper-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Portfolio</a><span
+            aria-hidden="true">/</span><span>Artifact 3</span></nav>
+        <p class="label accent">Artifact 3 · Title</p>
+        <h1>Machine Learning vs. Deep Learning: Choosing the Right Approach</h1>
+        <p class="standfirst">A comparative report on when to use traditional machine learning and when to use deep learning, with a real-world case study of each.</p>
+          and tested in 12 scenarios.</p>
+        <ul class="paper-meta" aria-label="Artifact details">
+          <li><b>Venkata Sai Varun Mooraboina</b></li>
+          <li>AIML-500, Indiana Wesleyan University</li>
+          <li>2 case studies · 3 pages</li>
+          <li>Written report</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="wrap layout">
+      <nav class="toc" aria-label="On this page">
+        <p class="label">On this page</p>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#documentation">The Report</a></li>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#value">Value Proposition</a></li>
+          <li><a href="#ai-use">AI Use</a></li>
+          <li><a href="#references">References</a></li>
+        </ol>
+      </nav>
+
+      <div class="content">
+        <section class="part" id="introduction" aria-labelledby="introduction-h">
+          <h2 id="introduction-h"><span class="sec-no" aria-hidden="true">§1</span>Introduction</h2>
+          <div class="part-body">
+            <p>This artifact is a written comparison of machine learning (ML) and deep learning (DL), created for the AIML-500 Machine Learning Fundamentals course (assignment 2.3). It uses two examples from the lesson, email spam detection for ML and autonomous driving for DL, and explains why each approach fits its problem and why the other does not. Artifact 1 shows research and Artifact 2 shows building and testing; this artifact shows technical reasoning. It is written for hiring managers and team leads in data and machine learning.</p>
+          </div>
+          <aside class="notes" aria-label="Notes">
+            <p class="note lit"><b>Audience</b>Hiring managers and team leads in data and machine learning.</p>
+          </aside>
+        </section>
+
+        <section class="part" id="documentation" aria-labelledby="documentation-h">
+          <h2 id="documentation-h"><span class="sec-no" aria-hidden="true">§2</span>The Report</h2>
+          <div class="part-body">
+            <figure>
+              <div class="viewer-wrap">
+                <object class="viewer" data="assets/ML_vs_DL_Report.pdf#view=FitH" type="application/pdf" aria-label="Machine learning versus deep learning report">
+                  <div class="viewer-fallback">
+                    <p><strong>Your browser can't show the report here.</strong></p>
+                    <p class="muted">Open or download the PDF to read all of it.</p>
+                    <a class="btn btn-ink" href="assets/ML_vs_DL_Report.pdf">Open the report (PDF)</a>
+                  </div>
+                </object>
+              </div>
+              <figcaption class="figcap"><b>Fig. 1</b>The full report. Scroll inside the viewer, or open it in a new tab.</figcaption>
+            </figure>
+            <div class="btn-row">
+              <a class="btn btn-ink" href="assets/ML_vs_DL_Report.pdf" download>Download the report (PDF) <span class="arr" aria-hidden="true">↓</span></a>
+              <a class="btn btn-line" href="assets/ML_vs_DL_Report.pdf" target="_blank" rel="noopener">Open full screen <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <aside class="notes" aria-label="Notes">
+            <p class="note"><b>Format</b>Word report exported as a PDF.</p>
+          </aside>
+        </section>
+
+        <section class="part" id="description" aria-labelledby="description-h">
+          <h2 id="description-h"><span class="sec-no" aria-hidden="true">§3</span>Description</h2>
+          <div class="part-body">
+            <p>The report has an introduction, two case studies, a comparison table, a conclusion, an AI disclosure and references. Each case study names a real-world application, gives three reasons the chosen approach is suitable, and gives three reasons the other approach is not.</p>
+            <div class="duo">
+              <div>
+                <h3>Machine learning: email spam detection</h3>
+                <p>Real-world example: Apache SpamAssassin. Suitable because spam can be spotted with features people define by hand, it runs fast on ordinary servers, and its decisions are easy to explain. Deep learning is not suitable because it adds cost, can overfit small or sparse data, and is hard to explain.</p>
+              </div>
+              <div>
+                <h3>Deep learning: autonomous driving</h3>
+                <p>Real-world example: Waymo's driving perception. Suitable because networks learn features from raw pixels, handle visual variation and improve with more data. Traditional ML is not suitable because hand-built features are fragile, raw pixels are too high-dimensional, and several tasks must run at once.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="part" id="objective" aria-labelledby="objective-h">
+          <h2 id="objective-h"><span class="sec-no" aria-hidden="true">§4</span>Objective</h2>
+          <div class="part-body">
+            <p>To show that I can choose the right modeling approach for a problem and justify the choice. The report argues that the choice depends on the structure of the data and the requirements of the system: structured data, strict time requirements and clear audit trails favor traditional machine learning, while complex unstructured data with endless real-world variation favors deep learning.</p>
+          </div>
+        </section>
+
+        <section class="part" id="process" aria-labelledby="process-h">
+          <h2 id="process-h"><span class="sec-no" aria-hidden="true">§5</span>Process</h2>
+          <div class="part-body">
+            <ol class="steps">
+              <li>I selected one machine learning example and one deep learning example from the course lesson.</li>
+              <li>I found a real-world application for each, Apache SpamAssassin and Waymo, and checked them against published sources.</li>
+              <li>For each case, I wrote why the chosen approach is suitable and why the other is not, tied to the data, speed, cost and explainability of the problem.</li>
+              <li>I built a comparison table covering data type, feature extraction, data requirements, compute needs and interpretability.</li>
+              <li>I added citations, an AI disclosure and a reference list, then reviewed and edited the report.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="part" id="tools" aria-labelledby="tools-h">
+          <h2 id="tools-h"><span class="sec-no" aria-hidden="true">§6</span>Tools and Technologies Used</h2>
+          <div class="part-body">
+            <ul class="tools" aria-hidden="true"><li>Microsoft Word</li><li>AI writing tool</li><li>Published sources</li><li>GitHub Pages</li></ul>
+            <p>Microsoft Word for the report; an AI writing tool to help outline comparisons and organize arguments; published sources and the course lesson for facts; GitHub Pages to publish this portfolio.</p>
+          </div>
+        </section>
+
+        <section class="part" id="value" aria-labelledby="value-h">
+          <h2 id="value-h"><span class="sec-no" aria-hidden="true">§7</span>Value Proposition</h2>
+          <div class="part-body">
+            <div class="duo">
+              <div>
+                <h3>Unique Value</h3>
+                <p>I do not treat deep learning as the default answer. The report explains when a simpler model is the better choice, for reasons of cost, speed and explainability, and when deep learning is worth its cost. That kind of judgment saves teams time and money.</p>
+              </div>
+              <div>
+                <h3>Relevance</h3>
+                <p>Hiring managers in data and machine learning need people who can match a method to a problem and explain the trade-offs to non-technical colleagues. This report shows I can do that, and it connects to my work as a data engineer, where choosing the right tool matters.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="part" id="ai-use" aria-labelledby="ai-use-h">
+          <h2 id="ai-use-h"><span class="sec-no" aria-hidden="true">§8</span>AI Use Statement</h2>
+          <div class="part-body">
+            <p class="boxed">An AI writing tool was used to help outline comparisons, organize arguments and refine grammar. I reviewed the technical claims, the selected examples and the final edits for accuracy and alignment with course guidelines.</p>
+          </div>
+        </section>
+
+        <section class="part" id="references" aria-labelledby="references-h">
+          <h2 id="references-h"><span class="sec-no" aria-hidden="true">§9</span>References</h2>
+          <div class="part-body refs">
+            <p>Apache SpamAssassin. (n.d.). <i>Welcome to Apache SpamAssassin</i>. Apache Software Foundation. <a href="https://spamassassin.apache.org/">https://spamassassin.apache.org/</a></p>
+            <p>Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <i>Deep learning</i>. MIT Press. <a href="https://www.deeplearningbook.org/">https://www.deeplearningbook.org/</a></p>
+            <p>Indiana Wesleyan University. (2026). <i>Machine learning vs. deep learning</i> [Course lesson, AIML-500]. Brightspace.</p>
+            <p>Russell, S., &amp; Norvig, P. (2021). <i>Artificial intelligence: A modern approach</i> (4th ed.). Pearson.</p>
+            <p>Sun, P., Kretzschmar, H., Dotiwalla, X., Chouard, A., Patnaik, V., Tsui, P., Guo, J., Zhou, Y., Chai, Y., Caine, B., Vasudevan, V., Han, W., Ngiam, J., Zhao, H., Timofeev, A., Ettinger, S., Krivokon, M., Gao, A., Joshi, A., . . . Anguelov, D. (2020). Scalability in perception for autonomous driving: Waymo Open Dataset. <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</i> (pp. 2446-2454). <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Sun_Scalability_in_Perception_for_Autonomous_Driving_Waymo_Open_Dataset_CVPR_2020_paper.html">https://openaccess.thecvf.com/content_CVPR_2020/html/Sun_Scalability_in_Perception_for_Autonomous_Driving_Waymo_Open_Dataset_CVPR_2020_paper.html</a></p>
+          </div>
+        </section>
+
+        <nav class="pager" aria-label="Portfolio pages">
+          <a class="btn btn-line" href="artifact-2.html"><span aria-hidden="true">←</span> Artifact 2</a>
+          <a class="btn btn-line" href="index.html">Back to portfolio</a>
+          <a class="btn btn-line" href="#main">Back to top ↑</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <span>Venkata Sai Varun Mooraboina | Indiana Wesleyan University | AIML-500</span>
+      <a href="index.html">Portfolio home</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
